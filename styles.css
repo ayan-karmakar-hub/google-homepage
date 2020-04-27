@@ -98,6 +98,7 @@ navbar a:hover{
 
 .search-buttons button:hover {
     color: #000000;
+    padding: 9.5px 19.5px 9.5px 19.5px;
     border-width: .5px;
     border-color: rgb(0,0,0,0.2);
 }
