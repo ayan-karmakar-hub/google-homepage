@@ -1,0 +1,135 @@
+html{
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+}
+body {
+    width: 99%;
+}
+/*navbar---------------------*/
+navbar{
+    margin-right: 10px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 40px 40px;
+    grid-template-areas: "left-nav right-nav dot-grid flower";
+    align-items: center;
+}
+
+navbar a {
+    margin: 10px;
+    color: rgb(0,0,0,0.87);
+    text-decoration: none;
+}
+
+navbar a:hover{
+    text-decoration: underline;
+}
+
+.left-nav, .right-nav {
+    
+    font-size: 13px;
+}
+
+.left-nav{
+    grid-area: left-nav;
+    justify-self: start;
+    padding: 0 0 0 15px;
+}
+
+.right-nav{
+    grid-area: right-nav;
+    justify-self: end;
+}
+
+#dot-grid {
+    grid-area: dot-grid;
+    justify-self: center;
+    width: 30px;
+    height: 30px;
+}
+
+#flower {
+    grid-area: flower;
+    justify-self: center;
+    width: 30px;
+    height: 30px;
+}
+
+/*main area---------------------*/
+.main-content {
+    display:grid;
+    grid-template-rows: 250px 60px 50px;
+    grid-template-areas:
+    "logo"
+    "search"
+    "buttons";
+    justify-items: center;
+}
+#logo{
+    grid-area: logo;
+    align-self: end;
+    width: 330px;
+    height: 160px;
+}
+.search-input{
+    grid-area: search;
+    width: 480px;
+    height: 40px;
+    border-color: hsl(0,0%,60%);
+    border-width: .5px;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.search-buttons{ 
+    grid-area: buttons;
+}
+
+.search-buttons button {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    color: #5F6368;
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+    border-width: 0px;
+    margin: 5px;
+}
+
+.search-buttons button:hover {
+    color: #000000;
+    border-width: .5px;
+    border-color: rgb(0,0,0,0.2);
+}
+
+/*footer---------------------*/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    line-height: 40px;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    display: grid;
+    align-items: end;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left-foot right-foot";
+}
+footer a {
+    color: #5f6368;
+    padding-left: 25px;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.left-foot{
+    grid-area: left-foot;
+} 
+.right-foot{
+    grid-area: right-foot;
+    justify-self: end;
+    
+}
