@@ -23,3 +23,10 @@ wrong variable name or didn't understand a concept when in reality
 I had the right idea but simply made a slight syntax error 
 (using : instead of ; at the end of a line). Overall, I am proud of 
 how much of this project I was able to do unassisted.
+
+/******** Relevant Files *********/
+
+index.html: The html code for this project that contains all the text and 
+    images that are displayed on the homepage.
+
+styles.css: The css file that contains all styling done to the HTML.
