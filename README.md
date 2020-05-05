@@ -1,3 +1,6 @@
+
+/********** Summary ***********/
+
 In this project, I replicated Google's homepage.
 
 There were 3 main components: 
